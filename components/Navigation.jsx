@@ -1,4 +1,4 @@
-import { Container } from '@/components'
+import { Container } from '.'
 import Image from 'next/image'
 
 export const Navigation = () => {
