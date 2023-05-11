@@ -18,16 +18,16 @@ async function getData() {
   return dynamicData.json()
 }
 
-export default async function Home() {
+export default async function Page() {
   const data = await getData()
 
   return (
     <main>
       <Container className="grid grid-cols-2 gap-1 py-5 md:grid-cols-3 lg:grid-cols-4">
-        {data?.data?.characters?.map(item => {
+        {data?.characters?.map(item => {
           return (
             <Link
-              href={`/character/${item.slug}`}
+              href={`/characters/${item.slug}`}
               key={item.name}
               className="overflow-hidden rounded-md"
             >
