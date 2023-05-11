@@ -23,7 +23,11 @@
       "slug": "stewie-griffin",
       "description": "Stewie Griffin is a highly intelligent and diabolically clever baby with a British accent. Despite his young age, Stewie possesses a dark and twisted sense of humor, often plotting elaborate schemes to eliminate his mother, Lois, or to conquer the world.",
       "age": "1 year",
-      "avatar": "/characters/stewie.png",
+      "avatar": "https://res.cloudinary.com/dakts9ect/image/upload/v1683835740/fcc-family-guys/stewie/stewie_ligibl.png",
+      "images": [
+        "https://res.cloudinary.com/dakts9ect/image/upload/v1683835731/fcc-family-guys/stewie/stewie-family-guy-fox-1085482_qxxhmu.jpg",
+        "https://res.cloudinary.com/dakts9ect/image/upload/v1683835733/fcc-family-guys/stewie/stewie-griffin-header_sbmpu7.avif"
+      ],
       "occupations": ["Scientist Inventor"]
     },
     {
@@ -33,6 +37,7 @@
       "description": "Lois Griffin is the matriarch of the Griffin family. She is a loving and caring wife to Peter Griffin and a devoted mother to her children, Meg, Chris, and Stewie. Lois often finds herself balancing the chaotic antics of her family while trying to maintain a sense of order in their lives.",
       "age": "Late 30s",
       "avatar": "/characters/lois.png",
+      "images": [],
       "occupations": [
         "Housewife",
         "Piano Instructor",
@@ -48,6 +53,7 @@
       "description": "Meg Griffin is the eldest daughter of the Griffin family. As a teenager, Meg often finds herself the target of ridicule and mistreatment, both at school and within her own family. Despite the constant challenges she faces, Meg maintains a resilient spirit and strives to find her place in the world.",
       "age": "16 years",
       "avatar": "/characters/meg.png",
+      "images": [],
       "occupations": ["High school student"]
     },
     {
@@ -57,6 +63,7 @@
       "description": "Introducing Joe Swanson, the resilient wheelchair-bound police officer from the animated sitcom Family Guy. Joe is a character who defies expectations and showcases the triumph of the human spirit. Despite facing the challenges of being paralyzed from the waist down, Joe's indomitable willpower and unwavering determination shine through in every aspect of his life. With his quick wit and sharp sense of humor, Joe proves that being a hero is not about physical abilities but about the strength of character.",
       "age": "Late 40s",
       "avatar": "/characters/joe.png",
+      "images": [],
       "occupations": ["Police Officer", "Father", "Husband"]
     },
     {
@@ -66,6 +73,7 @@
       "description": "Introducing Bonnie Swanson, a beloved character from the animated sitcom Family Guy. Bonnie brings a touch of warmth and resilience to the vibrant community of Quahog. As a dedicated wife, nurturing mother, and loyal friend, Bonnie's presence adds depth and heart to the show's ensemble cast. Her unwavering determination and unwavering support for her loved ones make her an integral part of the fabric of the community, proving that strength comes in many forms.",
       "age": "Late 30s",
       "avatar": "/characters/bonnie.png",
+      "images": [],
       "occupations": ["Stay-at-home Mom", "Supportive Spouse"]
     },
     {
@@ -75,6 +83,7 @@
       "description": "Glenn Quagmire, often referred to as just 'Quagmire,' is Peter's eccentric and wildly promiscuous neighbor. Known for his distinctive voice and catchphrase 'Giggity giggity goo,' Quagmire is always on the prowl for his next romantic conquest and is infamous for his outrageous and often inappropriate behavior.",
       "age": "Late 40s",
       "avatar": "/characters/quagmire.png",
+      "images": [],
       "occupations": ["commercial airline pilot"]
     },
     {
@@ -83,7 +92,11 @@
       "slug": "brian-griffin",
       "description": "Brian Griffin is the Griffin family's anthropomorphic pet dog and the voice of reason amidst the chaos. He is known for his intellectual pursuits, his love for martinis, and his wit. Brian often serves as the moral compass of the group and engages in various adventures and misadventures alongside the family.",
       "age": "7 years (in dog years)",
-      "avatar": "/characters/brian.png",
+      "avatar": "https://res.cloudinary.com/dakts9ect/image/upload/v1683835355/fcc-family-guys/brian/brian_p9ewsd.png",
+      "images": [
+        "https://res.cloudinary.com/dakts9ect/image/upload/v1683835426/fcc-family-guys/brian/best-brian-griffin-quotes_hl7ncy.jpg",
+        "https://res.cloudinary.com/dakts9ect/image/upload/v1683835430/fcc-family-guys/brian/l-intro-1669128726_mtvlll.jpg"
+      ],
       "occupations": ["Writer"]
     },
     {
@@ -93,6 +106,7 @@
       "description": "Chris Griffin is the lovable but dim-witted teenage son of Peter and Lois Griffin. Chris often finds himself unintentionally involved in absurd situations, making him a constant source of comedic moments in the show. Despite his lack of intelligence, Chris has a heart of gold and possesses a unique innocence that endears him to those around him.",
       "age": "14 years",
       "avatar": "/characters/chris.png",
+      "images": [],
       "occupations": [
         "High school student",
         "Former paperboy Former",
@@ -106,6 +120,7 @@
       "description": "Adam West is a fictionalized version of the late actor himself, serving as the eccentric and quirky mayor of Quahog. Known for his bizarre and nonsensical behavior, Adam West adds a touch of hilarity to the show with his outrageous antics.",
       "age": "Deceased",
       "avatar": "/characters/adam.png",
+      "images": [],
       "occupations": ["Mayor"]
     },
     {
@@ -115,6 +130,7 @@
       "description": "Cleveland Brown is a mild-mannered and good-hearted friend of Peter Griffin. Known for his distinctive voice and calm demeanor, Cleveland is often the voice of reason among his group of friends. After leaving Quahog, he moved to Stoolbend and starred in his own spin-off show, 'The Cleveland Show.'",
       "age": "Late 40s",
       "avatar": "/characters/clevland.png",
+      "images": [],
       "occupations": ["Deli Owner", "Former Cable Guy"]
     },
     {
@@ -124,6 +140,7 @@
       "description": "Carter Pewterschmidt is Lois Griffin's wealthy and controlling father. He is the CEO of Pewterschmidt Industries and is known for his arrogance and conservative beliefs. Despite his cold exterior, Carter occasionally shows moments of vulnerability and even bonds with Peter on rare occasions.",
       "age": "Late 70s",
       "avatar": "/characters/carter.png",
+      "images": [],
       "occupations": ["CEO of Pewterschmidt Industries"]
     },
     {
@@ -133,6 +150,7 @@
       "description": "Dr. Elmer Hartman is the Griffin family's incompetent and often clueless physician. Despite his lack of medical expertise, he is always ready to offer his questionable advice and treatments. Dr. Hartman's character provides comedic relief with his outrageous and misguided medical practices.",
       "age": "Late 40s",
       "avatar": "/characters/doctor.png",
+      "images": [],
       "occupations": ["Medical Doctor"]
     },
     {
@@ -142,6 +160,7 @@
       "description": "Ernie The Giant Chicken is a recurring antagonist in Family Guy, known for his intense rivalry with Peter Griffin. Their clashes often escalate into epic and absurd fights that span over several episodes. Ernie is a formidable adversary, always seeking revenge on Peter for a long-forgotten disagreement.",
       "age": "",
       "avatar": "/characters/chicken.png",
+      "images": [],
       "occupations": null
     },
     {
@@ -151,6 +170,7 @@
       "description": "Tom Tucker is the charismatic and smooth-talking news anchor for the Quahog 5 News. He is known for his sensationalistic reporting style and his flirtatious personality. Tom takes his role as a news anchor very seriously, even if it means sacrificing journalistic integrity for ratings.",
       "age": "40s",
       "avatar": "/characters/tom.png",
+      "images": [],
       "occupations": ["News Anchor"]
     },
     {
@@ -160,6 +180,7 @@
       "description": "Herbert is an elderly neighbor of the Griffin family, often seen lurking around their neighborhood. He has a peculiar infatuation with young boys, particularly with Chris Griffin, and frequently tries to engage in inappropriate activities with him. Herbert's character adds a touch of dark humor and discomfort to the show.",
       "age": "70s",
       "avatar": "/characters/herbert.png",
+      "images": [],
       "occupations": ["Retired U.S. Army Veteran"]
     }
   ]

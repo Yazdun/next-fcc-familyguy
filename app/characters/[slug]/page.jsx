@@ -49,11 +49,11 @@ export default async function Page({ params }) {
                 className="relative flex overflow-hidden bg-gray-900 rounded-xl"
               >
                 <Image
-                  className="transition-all hover:scale-110"
+                  className="transition-all duration-500 hover:scale-110 hover:rotate-2"
                   src={image}
                   alt=""
                   width={760}
-                  height={760}
+                  height={400}
                 />
               </li>
             )
