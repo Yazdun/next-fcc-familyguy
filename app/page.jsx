@@ -3,19 +3,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 async function getData() {
-  const dynamicData = await fetch('http://localhost:3000/api/characters', {
+  const data = await fetch('http://localhost:3000/api/characters', {
     cache: 'no-store',
   })
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
   // Recommendation: handle errors
 
-  if (!dynamicData.ok) {
+  if (!data.ok) {
     // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data')
   }
 
-  return dynamicData.json()
+  return data.json()
 }
 
 export default async function Page() {
