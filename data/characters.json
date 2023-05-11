@@ -123,15 +123,6 @@
       "occupations": ["CEO of Pewterschmidt Industries"]
     },
     {
-      "id": 13,
-      "name": "Donna Tubbs",
-      "slug": "donna-tubbs",
-      "description": "Donna Tubbs is the wife of Cleveland Brown. She is a strong and independent woman who is known for her no-nonsense attitude. Donna plays a significant role in both 'Family Guy' and 'The Cleveland Show,' providing support and wisdom to her family and friends.",
-      "age": "Late 30s",
-      "image": "/characters/donna.png",
-      "occupations": ["Waitress"]
-    },
-    {
       "id": 15,
       "name": "Dr. Elmer Hartman",
       "slug": "dr-elmer-hartman",
@@ -166,15 +157,6 @@
       "age": "70s",
       "image": "/characters/herbert.png",
       "occupations": ["Retired U.S. Army Veteran"]
-    },
-    {
-      "id": 20,
-      "name": "Mort Goldman",
-      "slug": "mort-goldman",
-      "description": "Mort Goldman is the owner of Mort's Pharmacy in Quahog. He is a neurotic and anxious character who often finds himself caught up in the absurd situations of the show. Mort is known for his distinctive voice and his constant kvetching about life's misfortunes.",
-      "age": "40s",
-      "image": "/characters/mort.png",
-      "occupations": ["Pharmacist"]
     }
   ]
 }
