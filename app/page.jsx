@@ -23,7 +23,7 @@ export default async function Home() {
 
   return (
     <main>
-      <Container className="grid grid-cols-4 gap-1">
+      <Container className="grid grid-cols-3 gap-1">
         {data?.data?.characters?.map(item => {
           return (
             <Link
