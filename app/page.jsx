@@ -32,7 +32,7 @@ export default async function Page() {
               className="overflow-hidden rounded-md"
             >
               <Image
-                src={item.image}
+                src={item.avatar}
                 alt=""
                 className="transition-all duration-500 hover:scale-110 hover:-rotate-2"
                 width={500}
