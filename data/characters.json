@@ -1,5 +1,5 @@
 {
-  "characters": [
+  "data": [
     {
       "id": 1,
       "name": "peter griffin",
@@ -194,7 +194,7 @@
         "https://res.cloudinary.com/dakts9ect/image/upload/v1683896683/fcc-family-guys/chicken/images_qwigpy.jpg",
         "https://res.cloudinary.com/dakts9ect/image/upload/v1683896686/fcc-family-guys/chicken/maxresdefault_1_zyqv4m.jpg"
       ],
-      "occupations": null
+      "occupations": ["Peter Griffin's rival"]
     },
     {
       "id": 15,

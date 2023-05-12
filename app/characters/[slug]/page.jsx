@@ -18,7 +18,7 @@ async function getData(slug) {
 }
 
 export default async function Page({ params }) {
-  const { character } = await getData(params.slug)
+  const { character, character_qoutes } = await getData(params.slug)
 
   return (
     <main>
@@ -59,6 +59,23 @@ export default async function Page({ params }) {
             )
           })}
         </ul>
+        {character_qoutes && (
+          <>
+            <h2 className="text-xl font-bold">Famous Qoutes</h2>
+            <ul className="grid gap-5">
+              {character_qoutes.map((item, idx) => {
+                return (
+                  <li
+                    className="p-2 italic text-gray-400 border-l-4 border-green-400 rounded-md"
+                    key={item.idx}
+                  >
+                    {item.qoute}
+                  </li>
+                )
+              })}
+            </ul>
+          </>
+        )}
       </Container>
     </main>
   )
