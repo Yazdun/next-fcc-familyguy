@@ -53,7 +53,7 @@ export default async function Page({ params }) {
                   src={image}
                   alt=""
                   width={760}
-                  height={400}
+                  height={435}
                 />
               </li>
             )
