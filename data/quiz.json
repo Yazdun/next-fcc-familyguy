@@ -1,0 +1,135 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "question": "What is the name of the Griffin family dog?",
+      "answers": ["Brian", "Stewie", "Meg", "Chris"],
+      "correct_answer": "Brian"
+    },
+    {
+      "id": 2,
+      "question": "What is the name of Lois Griffin's father?",
+      "answers": [
+        "Carter Pewterschmidt",
+        "Peter Griffin",
+        "Glenn Quagmire",
+        "Cleveland Brown"
+      ],
+      "correct_answer": "Carter Pewterschmidt"
+    },
+    {
+      "id": 3,
+      "question": "What is the name of the town where the Griffin family lives?",
+      "answers": ["Quahog", "Springfield", "Simpsons", "Griffinville"],
+      "correct_answer": "Quahog"
+    },
+    {
+      "id": 4,
+      "question": "What is the name of the bar where Peter, Joe, Quagmire, and Cleveland go to?",
+      "answers": [
+        "The Drunken Clam",
+        "The Griffin Tavern",
+        "The Quahog Pub",
+        "The Pawtucket Patriot Ale House"
+      ],
+      "correct_answer": "The Drunken Clam"
+    },
+    {
+      "id": 5,
+      "question": "What is the name of Stewie Griffin's teddy bear?",
+      "answers": ["Rupert", "Winston", "Barney", "Wally"],
+      "correct_answer": "Rupert"
+    },
+    {
+      "id": 6,
+      "question": "What is the name of the chicken who is Peter Griffin's nemesis?",
+      "answers": [
+        "Lois Griffin",
+        "Meg Griffin",
+        "Stewie Griffin",
+        "Ernie The Giant Chicken"
+      ],
+      "correct_answer": "Ernie The Giant Chicken"
+    },
+    {
+      "id": 7,
+      "question": "What is the name of the news anchor on Channel 5?",
+      "answers": [
+        "Tom Tucker",
+        "Diane Simmons",
+        "Peter Griffin",
+        "Stewie Griffin"
+      ],
+      "correct_answer": "Tom Tucker"
+    },
+    {
+      "id": 8,
+      "question": "What is the name of the police officer who is Joe Swanson's partner?",
+      "answers": [
+        "Brian Griffin",
+        "Stewie Griffin",
+        "Glenn Quagmire",
+        "Akira Yoshida"
+      ],
+      "correct_answer": "Akira Yoshida"
+    },
+    {
+      "id": 9,
+      "question": "What is the name of the mall that the Griffin family frequently goes to?",
+      "answers": [
+        "The Quahog Mall",
+        "The Springfield Mall",
+        "The Simpsons Mall",
+        "The Griffin Mall"
+      ],
+      "correct_answer": "The Quahog Mall"
+    },
+    {
+      "id": 10,
+      "question": "Who does Stewie want to kill?",
+      "answers": ["Meg", "Chris", "Peter", "Lois"],
+      "correct_answer": "Lois"
+    },
+    {
+      "id": 11,
+      "question": "Where was Peter born?",
+      "answers": ["Mexico", "Canada", "United States", "Russia"],
+      "correct_answer": ""
+    },
+    {
+      "id": 12,
+      "question": "Which Family Guy character is obsessed with world domination?",
+      "answers": ["Meg", "Chris", "Stewie", "Brian"],
+      "correct_answer": ""
+    },
+    {
+      "id": 13,
+      "question": "Who is the mayor of Quahog?",
+      "answers": ["Bill Bixby", "Adam West", "Lynda Carter", "Burt Ward"],
+      "correct_answer": "Adam West"
+    },
+    {
+      "id": 14,
+      "question": "Who founded the city of Quahog?",
+      "answers": [
+        "Griffin Peterson",
+        "Adam West",
+        "Miles Musket",
+        "A Magical Talking Calm"
+      ],
+      "correct_answer": "Griffin Peterson"
+    },
+    {
+      "id": 15,
+      "question": "What did Peter change Meg's name to on her birth certificate?",
+      "answers": ["Megillah", "Megatron", "Megolavina", "Mega Millions"],
+      "correct_answer": "Megatron"
+    },
+    {
+      "id": 16,
+      "question": "Who burned The Drunken Clam to the ground?",
+      "answers": ["Peter", "Brian", "God", "Stewie"],
+      "correct_answer": "Peter"
+    }
+  ]
+}
