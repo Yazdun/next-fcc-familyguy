@@ -59,6 +59,23 @@ export default async function Page({ params }) {
             )
           })}
         </ul>
+        {character.skills && (
+          <>
+            <h2 className="text-xl font-bold">Power and Skills</h2>
+            <ul className="flex flex-wrap gap-1">
+              {character.skills.map(item => {
+                return (
+                  <li
+                    className="flex justify-center flex-grow px-2 py-1 text-orange-400 rounded-full bg-orange-950"
+                    key={item}
+                  >
+                    {item}
+                  </li>
+                )
+              })}
+            </ul>
+          </>
+        )}
         {character_qoutes && (
           <>
             <h2 className="text-xl font-bold">Famous Qoutes</h2>
