@@ -19,7 +19,7 @@ export default async function Page({ params }) {
   return (
     <Container as="main" className="py-5 flex flex-col gap-5">
       <h1 className="text-lg font-semibold">{question.title}</h1>
-      <Answer data={question.answers} />
+      <Answer data={question.answers} questionId={params.id} />
     </Container>
   )
 }
