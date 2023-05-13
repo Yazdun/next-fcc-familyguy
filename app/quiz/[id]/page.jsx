@@ -1,7 +1,7 @@
-import { Container } from '@/components'
+import { Answer, Container } from '@/components'
 
-async function getData() {
-  const data = await fetch('http://localhost:3000/api/quiz/random', {
+async function getData(id) {
+  const data = await fetch(`http://localhost:3000/api/quiz/${id}`, {
     cache: 'no-store',
   })
   // The return value is *not* serialized
@@ -16,12 +16,15 @@ async function getData() {
   return data.json()
 }
 
-export default async function Page() {
-  const data = await getData()
+export default async function Page({ params }) {
+  const { question } = await getData(params.id)
 
   return (
     <main>
-      <Container className="py-5">quiz</Container>
+      <Container className="py-5 flex flex-col gap-5">
+        <h1>{question.title}</h1>
+        <Answer data={question.answers} />
+      </Container>
     </main>
   )
 }
