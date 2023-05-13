@@ -20,11 +20,9 @@ export default async function Page({ params }) {
   const { question } = await getData(params.id)
 
   return (
-    <main>
-      <Container className="py-5 flex flex-col gap-5">
-        <h1>{question.title}</h1>
-        <Answer data={question.answers} />
-      </Container>
-    </main>
+    <Container as="main" className="py-5 flex flex-col gap-5">
+      <h1>{question.title}</h1>
+      <Answer data={question.answers} />
+    </Container>
   )
 }
