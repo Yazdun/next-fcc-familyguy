@@ -1,15 +1,12 @@
-import { Answer, Container } from '@/components'
+import { Container } from '@/components'
+import { Answer } from '@/components/Answer'
 
 async function getData(id) {
   const data = await fetch(`http://localhost:3000/api/quiz/${id}`, {
     cache: 'no-store',
   })
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-  // Recommendation: handle errors
 
   if (!data.ok) {
-    // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data')
   }
 
@@ -21,7 +18,7 @@ export default async function Page({ params }) {
 
   return (
     <Container as="main" className="py-5 flex flex-col gap-5">
-      <h1>{question.title}</h1>
+      <h1 className="text-lg font-semibold">{question.title}</h1>
       <Answer data={question.answers} />
     </Container>
   )

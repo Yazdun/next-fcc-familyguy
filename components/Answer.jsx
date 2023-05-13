@@ -8,7 +8,7 @@ export const Answer = ({ data }) => {
       {data.map(item => {
         return (
           <li key={item}>
-            <button className="p-2 rounded-md bg-slate-700 w-full flex">
+            <button className="p-2 rounded-md bg-slate-700 w-full flex text-sm">
               {item}
             </button>
           </li>

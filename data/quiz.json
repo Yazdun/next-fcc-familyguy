@@ -111,12 +111,7 @@
     {
       "id": "e3dDjEEWl0",
       "title": "Who founded the city of Quahog?",
-      "answers": [
-        "Griffin Peterson",
-        "Adam West",
-        "Miles Musket",
-        "A Magical Talking Calm"
-      ],
+      "answers": ["Griffin Peterson", "Adam West", "Miles Musket", "A Frog"],
       "correct_answer": "Griffin Peterson"
     },
     {

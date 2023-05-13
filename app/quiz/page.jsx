@@ -41,7 +41,7 @@ export default async function Page() {
           </p>
           <Link
             href={`/quiz/${data.randomQuestion}`}
-            className="flex items-center justify-center gap-1 px-5 font-semibold  transition-colors outline py-4 text-green-500 rounded-md duration-600 hover:bg-gray-900"
+            className="flex items-center justify-center gap-1 px-5 font-semibold  transition-colors outline py-4 text-orange-500 rounded-md duration-600 hover:bg-orange-950"
           >
             <TbArrowBigRightFilled className="text-lg" />
             Take a Quiz Now!
