@@ -17,9 +17,9 @@ export default async function Page({ params }) {
   const { question } = await getData(params.id)
 
   return (
-    <Container as="main" className="py-5 flex flex-col gap-5">
+    <Container as="main" className="flex flex-col gap-5 py-5">
       <h1 className="text-lg font-semibold">{question.title}</h1>
-      <Answer data={question.answers} questionId={params.id} />
+      <Answer answers={question.answers} questionId={params.id} />
     </Container>
   )
 }

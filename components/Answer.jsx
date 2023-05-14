@@ -2,51 +2,53 @@
 
 import { useEffect, useState } from 'react'
 import cn from 'classnames'
-import { Container } from '.'
 import Link from 'next/link'
 import { FiRepeat } from 'react-icons/fi'
 
-export const Answer = ({ data, questionId }) => {
+export const Answer = ({ answers, questionId }) => {
   const [selected, setSeleceted] = useState(null)
-  const [correct, setCorrect] = useState(null)
-  const [random, setRandom] = useState(null)
-  const [loading, setLoading] = useState(null)
-
-  console.log(correct)
-  console.log(random)
+  const [data, setData] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    const url = `/api/quiz/answer/${questionId}`
-
-    const fetchResult = async () => {
+    let subscribed = true
+    if (selected) {
       setLoading(true)
-      await fetch(url)
-        .then(response => response.json())
+      fetch(`/api/quiz/answer/${questionId}`)
+        .then(res => res.json())
         .then(data => {
-          setCorrect(data.answer)
-          setRandom(data.random)
           setLoading(false)
+          if (subscribed) {
+            setData(data)
+          }
         })
     }
 
-    selected && fetchResult()
+    return () => {
+      console.log('cancelled!')
+      subscribed = false
+    }
   }, [selected])
 
   return (
     <>
       <ul className="grid grid-cols-2 gap-2 md:grid-cols-4">
-        {data.map(item => {
+        {answers.map(item => {
+          const isLoading = selected === item && loading
+          const isWrong =
+            selected === item && data && data?.correct !== selected
+          const isCorrect = data?.correct === item
+
           return (
             <li key={item}>
               <button
+                disabled={data || loading}
                 onClick={() => setSeleceted(item)}
                 className={cn(
-                  'p-2 rounded-md bg-slate-700 w-full flex text-sm',
-                  selected === item &&
-                    selected !== correct &&
-                    !loading &&
-                    'bg-red-500',
-                  correct === item && 'outline outline-green-500',
+                  'p-2 rounded-md bg-slate-800 w-full flex text-sm font-semibold disabled:cursor-not-allowed transition-all',
+                  isLoading && 'animate-pulse',
+                  isWrong && 'bg-red-700',
+                  isCorrect && 'outline text-green-500',
                 )}
               >
                 {item}
@@ -55,10 +57,10 @@ export const Answer = ({ data, questionId }) => {
           )
         })}
       </ul>
-      {random && (
+      {data?.random && (
         <Link
-          href={`/quiz/${random}`}
-          className="flex text-blue-500 gap-1 items-center"
+          href={`/quiz/${data.random}`}
+          className="flex items-center gap-1 text-blue-400"
         >
           <FiRepeat className="mt-1" />
           Do it again

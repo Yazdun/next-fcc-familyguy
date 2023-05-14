@@ -17,7 +17,7 @@ export async function GET(req, { params }) {
     const random = Math.floor(Math.random() * filteredQuestions.length)
 
     return NextResponse.json({
-      answer: correct_answer,
+      correct: correct_answer,
       random: filteredQuestions[random].id,
     })
   } catch (error) {
