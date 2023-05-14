@@ -38,7 +38,7 @@ export default async function Page({ params }) {
           })}
         </ul>
       </div>
-      <p className="leading-6">{character.description}</p>
+      <p className="text-sm leading-6">{character.description}</p>
       <ul className="grid gap-2 sm:grid-cols-2">
         {character.images.map(image => {
           return (
