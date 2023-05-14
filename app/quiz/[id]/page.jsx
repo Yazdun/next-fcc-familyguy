@@ -1,4 +1,5 @@
 import { Container } from '@/components'
+import { Answer } from '@/components/Answer'
 
 async function getData(id) {
   const data = await fetch(`http://localhost:3000/api/quiz/${id}`, {
@@ -18,7 +19,7 @@ export default async function Page({ params }) {
   return (
     <Container as="main" className="flex flex-col gap-5 py-5">
       <h1 className="text-lg font-semibold">{question.title}</h1>
-      {/* <Answer answers={question.answers} questionId={params.id} /> */}
+      <Answer answers={question.answers} questionId={params.id} />
     </Container>
   )
 }
