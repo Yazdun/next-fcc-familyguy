@@ -1,11 +1,25 @@
 import { Container } from '@/components'
-import { getData } from '@/utils/getData'
+import { endpoint } from '@/utils/endpoint'
 import Image from 'next/image'
 import Link from 'next/link'
 import { TbArrowBigRightFilled } from 'react-icons/tb'
 
+async function getData(path) {
+  const data = await fetch(`${endpoint}/${path}`, { cache: 'no-store' })
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+  // Recommendation: handle errors
+
+  if (!data.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data')
+  }
+
+  return data.json()
+}
+
 export default async function Page() {
-  const data = await getData('quiz/random', 'no-store')
+  const data = await getData('quiz/random')
 
   return (
     <main>

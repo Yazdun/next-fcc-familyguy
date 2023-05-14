@@ -1,6 +1,20 @@
 import { Container } from '@/components'
 import { Answer } from '@/components/Answer'
-import { getData } from '@/utils/getData'
+import { endpoint } from '@/utils/endpoint'
+
+async function getData(path) {
+  const data = await fetch(`${endpoint}/${path}`)
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+  // Recommendation: handle errors
+
+  if (!data.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data')
+  }
+
+  return data.json()
+}
 
 export default async function Page({ params }) {
   const { question } = await getData(`/quiz/${params.id}`)
