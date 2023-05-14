@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import cn from 'classnames'
 import Link from 'next/link'
 import { FiRepeat } from 'react-icons/fi'
+import { MdNearbyError } from 'react-icons/md'
+import { FaCheck } from 'react-icons/fa'
 
 export const Answer = ({ answers, questionId }) => {
   const [selected, setSeleceted] = useState(null)
@@ -45,13 +47,15 @@ export const Answer = ({ answers, questionId }) => {
                 disabled={data || loading}
                 onClick={() => setSeleceted(item)}
                 className={cn(
-                  'p-2 rounded-md bg-slate-800 w-full flex text-sm font-semibold disabled:cursor-not-allowed transition-all',
+                  'p-2 rounded-md bg-slate-800 flex items-center justify-between w-full flex text-sm font-semibold disabled:cursor-not-allowed transition-all',
                   isLoading && 'animate-pulse',
                   isWrong && 'bg-red-700',
                   isCorrect && 'outline text-green-500',
                 )}
               >
                 {item}
+                {isCorrect && <FaCheck />}
+                {isWrong && <MdNearbyError />}
               </button>
             </li>
           )
