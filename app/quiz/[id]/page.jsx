@@ -3,7 +3,7 @@ import { Answer } from '@/components/Answer'
 import { getData } from '@/utils/getData'
 
 export default async function Page({ params }) {
-  const { question } = await getData(`/quiz/${id}`)
+  const { question } = await getData(`/quiz/${params.id}`)
 
   return (
     <Container as="main" className="flex flex-col gap-5 py-5">
