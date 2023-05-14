@@ -3,7 +3,7 @@ import { endpoint } from '@/utils/endpoint'
 import Image from 'next/image'
 
 async function getData(path) {
-  const data = await fetch(`${endpoint}/${path}`, { cache: 'no-store' })
+  const data = await fetch(`${endpoint}/${path}`)
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
   // Recommendation: handle errors
