@@ -2,7 +2,7 @@ const devUrl = 'http://localhost:3000'
 const prodUrl = 'https://next-fcc-familyguy.vercel.app/'
 
 export async function getData(path, cache = 'default') {
-  const data = await fetch(`${devUrl}/api/${path}`, {
+  const data = await fetch(`${prodUrl}/api/${path}`, {
     cache: cache,
   })
   // The return value is *not* serialized
