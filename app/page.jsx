@@ -1,4 +1,5 @@
 import { Container } from '@/components'
+import { getData } from '@/utils/getData'
 import Image from 'next/image'
 import Link from 'next/link'
 
