@@ -33,7 +33,7 @@ export default async function Page() {
 
         <div className="md:w-[50%] flex flex-col gap-5">
           <h1 className="text-2xl font-semibold">Family Guy Quiz</h1>
-          <p className="text-sm text-gray-300">
+          <p className="text-sm leading-6 text-gray-300">
             Take this quiz to find out how much you know about the hit animated
             sitcom Family Guy. Test your knowledge of the characters, the
             episodes, and the show&apos;s many pop culture references.
