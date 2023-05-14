@@ -3,7 +3,7 @@ import { Answer } from '@/components/Answer'
 import { endpoint } from '@/utils/endpoint'
 
 async function getData(path) {
-  const data = await fetch(`${endpoint}/${path}`)
+  const data = await fetch(`${endpoint}/${path}`, { cache: 'no-store' })
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
   // Recommendation: handle errors

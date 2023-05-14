@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { endpoint } from '@/utils/endpoint'
 
 export async function getData(path) {
-  const data = await fetch(`${endpoint}/${path}`)
+  const data = await fetch(`${endpoint}/${path}`, { cache: 'no-store' })
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
   // Recommendation: handle errors
