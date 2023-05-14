@@ -1,35 +1,20 @@
 import { Container } from '@/components'
+import { getData } from '@/utils/getData'
 import Image from 'next/image'
 import Link from 'next/link'
 import { TbArrowBigRightFilled } from 'react-icons/tb'
 
-async function getData() {
-  const data = await fetch('http://localhost:3000/api/quiz/random', {
-    cache: 'no-store',
-  })
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-  // Recommendation: handle errors
-
-  if (!data.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data')
-  }
-
-  return data.json()
-}
-
 export default async function Page() {
-  const data = await getData()
+  const data = await getData('quiz/random', 'no-store')
 
   return (
     <main>
-      <Container className="py-5 flex flex-col gap-5 md:flex-row-reverse md:justify-between">
-        <div className="relative rounded-2xl overflow-hidden">
+      <Container className="flex flex-col gap-5 py-5 md:flex-row-reverse md:justify-between">
+        <div className="relative overflow-hidden rounded-2xl">
           <div className="md:w-[24rem]">
             <Image src="/wallpaper.jpg" alt="" width={700} height={700} />
           </div>
-          <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black to-transparent md:bg-gradient-to-r"></div>
+          <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent md:bg-gradient-to-r"></div>
         </div>
 
         <div className="md:w-[50%] flex flex-col gap-5">
@@ -41,7 +26,7 @@ export default async function Page() {
           </p>
           <Link
             href={`/quiz/${data.randomQuestion}`}
-            className="flex items-center justify-center gap-1 px-5 font-semibold  transition-colors outline py-4 text-orange-500 rounded-md duration-600 hover:bg-orange-950"
+            className="flex items-center justify-center gap-1 px-5 py-4 font-semibold text-orange-500 transition-colors rounded-md outline duration-600 hover:bg-orange-950"
           >
             <TbArrowBigRightFilled className="text-lg" />
             Take a Quiz Now!
