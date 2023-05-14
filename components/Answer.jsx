@@ -30,7 +30,7 @@ export const Answer = ({ answers, questionId }) => {
       console.log('cancelled!')
       subscribed = false
     }
-  }, [selected])
+  }, [questionId, selected])
 
   return (
     <>
@@ -47,7 +47,7 @@ export const Answer = ({ answers, questionId }) => {
                 disabled={data || loading}
                 onClick={() => setSeleceted(item)}
                 className={cn(
-                  'p-2 rounded-md bg-slate-800 flex items-center justify-between w-full flex text-sm font-semibold disabled:cursor-not-allowed transition-all',
+                  'p-2 rounded-md bg-slate-800 items-center justify-between w-full flex text-sm font-semibold disabled:cursor-not-allowed transition-all',
                   isLoading && 'animate-pulse',
                   isWrong && 'bg-red-700',
                   isCorrect && 'outline text-green-500',
