@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 Next Page Component
+|
+|  🐯 Purpose: DYNAMIC CHARACTER PAGE
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import { Container } from '@/components'
 import { endpoint } from '@/utils/endpoint'
 import Image from 'next/image'

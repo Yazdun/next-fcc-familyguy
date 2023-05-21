@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 Next Page Component
+|
+|  🐯 Purpose: HOMEPAGE
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import { Container } from '@/components'
 import Image from 'next/image'
 import Link from 'next/link'

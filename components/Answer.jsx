@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC Answer - CLIENT
+|
+|  🐯 Purpose: COMPONENT TO GENERATE QUIZ ANSWERS
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 'use client'
 
 import { useEffect, useState } from 'react'

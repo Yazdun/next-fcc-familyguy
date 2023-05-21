@@ -1,15 +1,19 @@
+/*-------------------------------------------------------------------
+|  🐼 Next Page Component
+|
+|  🐯 Purpose: QUIZ DYNAMIC QUESTION PAGE
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import { Container } from '@/components'
 import { Answer } from '@/components/Answer'
 import { endpoint } from '@/utils/endpoint'
 
 async function getData(path) {
   const data = await fetch(`${endpoint}/${path}`)
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-  // Recommendation: handle errors
 
   if (!data.ok) {
-    // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data')
   }
 

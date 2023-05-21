@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC Navigation
+|
+|  🐯 Purpose: TOP NAVIGATION BAR
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import Link from 'next/link'
 import { Container } from '.'
 import Image from 'next/image'
