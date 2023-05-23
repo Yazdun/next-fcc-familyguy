@@ -1,10 +1,11 @@
-/*-------------------------------------------------------------------
-|  🐼 React FC Answer - CLIENT
-|
-|  🐯 Purpose: COMPONENT TO GENERATE QUIZ ANSWERS
-|
-|  🐸 Returns:  JSX
-*-------------------------------------------------------------------*/
+/**
+Renders a component that displays a list of answer options for a quiz question.
+@component
+@param {Object} props - The component props.
+@param {Array} props.answers - An array of answer options.
+@param {string} props.questionId - The ID of the quiz question.
+@returns {JSX.Element} The rendered component.
+*/
 
 'use client'
 

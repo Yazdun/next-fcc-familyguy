@@ -1,16 +1,22 @@
-/*-------------------------------------------------------------------
-|  🐼 Next Page Component
-|
-|  🐯 Purpose: QUIZ INTRO PAGE
-|
-|  🐸 Returns:  JSX
-*-------------------------------------------------------------------*/
+/**
+Renders a Next.js page component that displays a quiz introduction with an image and a link to start the quiz.
+@component
+@returns {JSX.Element} The rendered page component.
+*/
 
 import { Container } from '@/components'
 import { endpoint } from '@/utils/endpoint'
 import Image from 'next/image'
 import Link from 'next/link'
 import { TbArrowBigRightFilled } from 'react-icons/tb'
+
+/**
+Retrieves data from the specified endpoint path.
+@async
+@param {string} path - The endpoint path to fetch data from.
+@returns {Promise<Object>} A promise that resolves to the fetched data.
+@throws {Error} If the data fetching fails.
+*/
 
 async function getData(path) {
   const data = await fetch(`${endpoint}/${path}`, { cache: 'no-store' })

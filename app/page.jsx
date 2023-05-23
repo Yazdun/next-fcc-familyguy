@@ -1,24 +1,26 @@
-/*-------------------------------------------------------------------
-|  🐼 Next Page Component
-|
-|  🐯 Purpose: HOMEPAGE
-|
-|  🐸 Returns:  JSX
-*-------------------------------------------------------------------*/
+/**
 
+Renders a Next.js page component that displays a grid of character avatars with links to individual character pages.
+@component
+@returns {JSX.Element} The rendered page component.
+*/
 import { Container } from '@/components'
 import Image from 'next/image'
 import Link from 'next/link'
 import { endpoint } from '@/utils/endpoint'
+/**
+
+Retrieves data from the specified endpoint path.
+@async
+@param {string} path - The endpoint path to fetch data from.
+@returns {Promise<Object>} A promise that resolves to the fetched data.
+@throws {Error} If the data fetching fails.
+*/
 
 export async function getData(path) {
   const data = await fetch(`${endpoint}/${path}`)
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-  // Recommendation: handle errors
 
   if (!data.ok) {
-    // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data')
   }
 

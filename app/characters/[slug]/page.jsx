@@ -1,14 +1,23 @@
-/*-------------------------------------------------------------------
-|  🐼 Next Page Component
-|
-|  🐯 Purpose: DYNAMIC CHARACTER PAGE
-|
-|  🐸 Returns:  JSX
-*-------------------------------------------------------------------*/
+/**
+Renders a Next.js page component that displays detailed information about a character, including their name, occupations, description, images, skills, and famous quotes.
+@component
+@param {Object} props - The component props.
+@param {Object} props.params - The parameters passed to the page component.
+@param {string} props.params.slug - The slug of the character.
+@returns {JSX.Element} The rendered page component.
+*/
 
 import { Container } from '@/components'
 import { endpoint } from '@/utils/endpoint'
 import Image from 'next/image'
+
+/**
+Retrieves data from the specified endpoint path.
+@async
+@param {string} path - The endpoint path to fetch data from.
+@returns {Promise<Object>} A promise that resolves to the fetched data.
+@throws {Error} If the data fetching fails.
+*/
 
 async function getData(path) {
   const data = await fetch(`${endpoint}/${path}`)
