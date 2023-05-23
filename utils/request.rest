@@ -1,0 +1,20 @@
+# ::: GET LIST OF CHARACTERS 
+GET http://localhost:3000/api/characters
+
+###
+
+# ::: GET A CHARACTER 
+GET http://localhost:3000/api/characters/peter-griffin
+
+###
+
+# ::: GET A RANDOM QUIZ QUESTION
+GET http://localhost:3000/api/quiz/random
+###
+
+# ::: GET A QUIZ QUESTION 
+GET http://localhost:3000/api/quiz/CfQnf3lH56
+###
+
+# ::: GET AN ANSWER FOR A QUIZ QUESTION 
+GET http://localhost:3000/api/quiz/answer/CfQnf3lH56
