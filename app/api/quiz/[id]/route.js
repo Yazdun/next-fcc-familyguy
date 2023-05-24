@@ -21,11 +21,6 @@ export async function GET(req, { params }) {
 
     const { correct_answer, ...rest } = question
 
-    const filteredQuestions = questions.data.filter(
-      item => item.id !== params.id,
-    )
-    const random = Math.floor(Math.random() * filteredQuestions.length)
-
     return NextResponse.json({
       question: rest,
       randomQuestion: filteredQuestions[random].id,
