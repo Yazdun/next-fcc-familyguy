@@ -8,35 +8,18 @@ Renders a Next.js page component that displays detailed information about a char
 */
 
 import { Container } from '@/components'
-import { endpoint } from '@/utils/endpoint'
+import { getAllCharacters, getCharacterBySlug } from '@/lib/characters'
 import Image from 'next/image'
 
-/**
-Retrieves data from the specified endpoint path.
-@async
-@param {string} path - The endpoint path to fetch data from.
-@returns {Promise<Object>} A promise that resolves to the fetched data.
-@throws {Error} If the data fetching fails.
-*/
+export const dynamicParams = false
 
-async function getData(path) {
-  const data = await fetch(`${endpoint}/${path}`)
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
-  // Recommendation: handle errors
-
-  if (!data.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data')
-  }
-
-  return data.json()
+export async function generateStaticParams() {
+  const { characters } = await getAllCharacters()
+  return characters.map(character => ({ slug: character.slug }))
 }
 
 export default async function Page({ params }) {
-  const { character, character_qoutes } = await getData(
-    `/characters/${params.slug}`,
-  )
+  const { character, character_qoutes } = await getCharacterBySlug(params.slug)
 
   return (
     <Container className="flex flex-col gap-5 py-5" as="main">
