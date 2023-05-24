@@ -9,28 +9,10 @@ Renders a Next.js page component that displays a quiz question and its answer op
 
 import { Container } from '@/components'
 import { Answer } from '@/components/Answer'
-import { endpoint } from '@/utils/endpoint'
-
-/**
-Retrieves data from the specified endpoint path.
-@async
-@param {string} path - The endpoint path to fetch data from.
-@returns {Promise<Object>} A promise that resolves to the fetched data.
-@throws {Error} If the data fetching fails.
-*/
-
-async function getData(path) {
-  const data = await fetch(`${endpoint}/${path}`)
-
-  if (!data.ok) {
-    throw new Error('Failed to fetch data')
-  }
-
-  return data.json()
-}
+import { getQuizQuestion } from '@/lib/quiz'
 
 export default async function Page({ params }) {
-  const { question } = await getData(`/quiz/${params.id}`)
+  const { question } = await getQuizQuestion(params.id)
 
   return (
     <Container as="main" className="flex flex-col gap-5 py-5">

@@ -13,7 +13,7 @@ GET http://localhost:3000/api/quiz/random
 ###
 
 # ::: GET A QUIZ QUESTION 
-GET http://localhost:3000/api/quiz/CfQnf3lH56
+GET http://localhost:3000/api/quiz/DFfAzImRk6
 ###
 
 # ::: GET AN ANSWER FOR A QUIZ QUESTION 

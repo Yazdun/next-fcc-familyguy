@@ -23,7 +23,6 @@ export async function GET(req, { params }) {
 
     return NextResponse.json({
       question: rest,
-      randomQuestion: filteredQuestions[random].id,
     })
   } catch (error) {
     return new NextResponse('Internal Server Error', { status: 500 })
