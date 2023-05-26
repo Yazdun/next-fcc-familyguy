@@ -7,6 +7,7 @@ Renders a Next.js page component that displays a quiz introduction with an image
 import { Container } from '@/components'
 import Image from 'next/image'
 import Link from 'next/link'
+import { endpoint } from '@/utils/endpoint'
 import { TbArrowBigRightFilled } from 'react-icons/tb'
 
 export default async function Page() {
