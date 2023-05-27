@@ -40,7 +40,7 @@
 ## Introduction
 
 Welcome to the GitHub repository for the
-[How To Validate Forms in React: The Ultimate Guide for Beginners](https://www.freecodecamp.org/news/step-by-step-tutorial-for-building-your-first-full-stack-application-with-nextjs)
+[How to Create a Full-Stack Application with Next.js](https://www.freecodecamp.org/news/step-by-step-tutorial-for-building-your-first-full-stack-application-with-nextjs)
 tutorial!
 
 In this tutorial, I will take you through the basics of Next.js and guide you in
