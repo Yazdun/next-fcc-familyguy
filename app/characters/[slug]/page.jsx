@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }) {
-  const { character, character_qoutes } = await getCharacterBySlug(params.slug)
+  const { character, character_quotes } = await getCharacterBySlug(params.slug)
 
   return (
     <Container className="flex flex-col gap-5 py-5" as="main">
@@ -74,17 +74,17 @@ export default async function Page({ params }) {
           </ul>
         </>
       )}
-      {character_qoutes && (
+      {character_quotes && (
         <>
-          <h2 className="text-xl font-bold">Famous Qoutes</h2>
+          <h2 className="text-xl font-bold">Famous Quotes</h2>
           <ul className="grid gap-5">
-            {character_qoutes.map((item, idx) => {
+            {character_quotes.map((item, idx) => {
               return (
                 <li
                   className="p-2 italic text-gray-400 border-l-4 border-green-400 rounded-md"
                   key={item.idx}
                 >
-                  {item.qoute}
+                  {item.quote}
                 </li>
               )
             })}
