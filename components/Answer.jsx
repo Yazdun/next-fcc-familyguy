@@ -104,7 +104,7 @@ export const Answer = ({ answers, questionId }) => {
           className="flex items-center gap-1 text-blue-400"
         >
           <FiRepeat className="mt-1" />
-          Next Question
+          Next Question / Do it Again
         </Link>
       )}
     </>
