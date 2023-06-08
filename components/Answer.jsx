@@ -8,7 +8,6 @@ Renders a component that displays a list of answer options for a quiz question.
 */
 
 'use client'
-
 import { useEffect, useState } from 'react'
 import cn from 'classnames'
 import Link from 'next/link'
@@ -17,9 +16,11 @@ import { MdNearbyError } from 'react-icons/md'
 import { FaCheck } from 'react-icons/fa'
 
 export const Answer = ({ answers, questionId }) => {
-  const [selected, setSeleceted] = useState(null)
+  const [selected, setSelected] = useState(null)
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(false)
+  const [showNextQuestion, setShowNextQuestion] = useState(false)
+  const [showTryAgain, setShowTryAgain] = useState(false)
 
   useEffect(() => {
     let subscribed = true
@@ -31,15 +32,28 @@ export const Answer = ({ answers, questionId }) => {
           setLoading(false)
           if (subscribed) {
             setData(data)
+            if (data.correct !== selected) {
+              setShowNextQuestion(false)
+              setShowTryAgain(true)
+            } else {
+              setShowNextQuestion(true)
+              setShowTryAgain(false)
+            }
           }
         })
     }
 
     return () => {
-      console.log('cancelled!')
       subscribed = false
     }
   }, [questionId, selected])
+
+  const handleRetry = () => {
+    setSelected(null)
+    setData(null)
+    setShowNextQuestion(false)
+    setShowTryAgain(false)
+  }
 
   return (
     <>
@@ -54,12 +68,15 @@ export const Answer = ({ answers, questionId }) => {
             <li key={item}>
               <button
                 disabled={data || loading}
-                onClick={() => setSeleceted(item)}
+                onClick={() => setSelected(item)}
                 className={cn(
-                  'p-2 rounded-md  items-center justify-between w-full flex text-sm font-semibold disabled:cursor-not-allowed transition-all',
+                  'p-2 rounded-md items-center justify-between w-full flex text-sm font-semibold disabled:cursor-not-allowed transition-all',
                   isLoading && 'animate-pulse',
-                  isWrong ? 'bg-red-700' : 'bg-slate-800',
-                  isCorrect && 'outline text-green-500',
+                  isWrong && 'bg-red-700',
+                  !isLoading && !isWrong && 'bg-slate-800',
+                  isCorrect &&
+                    (showNextQuestion || showTryAgain) &&
+                    'text-green-500',
                 )}
               >
                 {item}
@@ -70,13 +87,24 @@ export const Answer = ({ answers, questionId }) => {
           )
         })}
       </ul>
-      {data?.random && (
-        <Link
-          href={`/quiz/${data.random}`}
+
+      {showTryAgain && (
+        <button
+          onClick={handleRetry}
           className="flex items-center gap-1 text-blue-400"
         >
           <FiRepeat className="mt-1" />
-          Do it again
+          Try Again
+        </button>
+      )}
+
+      {showNextQuestion && (
+        <Link
+          href={`/quiz/${data?.random}`}
+          className="flex items-center gap-1 text-blue-400"
+        >
+          <FiRepeat className="mt-1" />
+          Next Question
         </Link>
       )}
     </>
