@@ -125,6 +125,66 @@
       "title": "Who burned The Drunken Clam to the ground?",
       "answers": ["Peter", "Brian", "God", "Stewie"],
       "correct_answer": "Peter"
+    },
+    {
+      "id": "cQC0Y2Dmha",
+      "title": "What is the name of Character shown in below image?",
+      "quiz_image": "https://res.cloudinary.com/dakts9ect/image/upload/v1683835740/fcc-family-guys/stewie/stewie_ligibl.png",
+      "answers": [
+        "Carter Pewterschmidt",
+        "Stewie griffin",
+        "Glenn Quagmire",
+        "Cleveland Brown"
+      ],
+      "correct_answer": "Stewie griffin"
+    },
+    {
+      "id": "cQC0Y2Dmhb",
+      "title": "What is the name of Character shown in below image?",
+      "quiz_image": "https://res.cloudinary.com/dakts9ect/image/upload/v1683833864/fcc-family-guys/peter/peter_qniww9.png",
+      "answers": [
+        "Carter Pewterschmidt",
+        "Peter Griffin",
+        "Glenn Quagmire",
+        "Cleveland Brown"
+      ],
+      "correct_answer": "Peter Griffin"
+    },
+    {
+      "id": "cQC0Y2Dmhc",
+      "title": "What is the name of Character shown in below image?",
+      "quiz_image":"https://res.cloudinary.com/dakts9ect/image/upload/v1683839731/fcc-family-guys/lois/lois_rwaiti.png",
+      "answers": [
+        "Carter Pewterschmidt",
+        "Lois griffin",
+        "Glenn Quagmire",
+        "Stewie griffin"
+      ],
+      "correct_answer": "Lois griffin"
+    },
+    {
+      "id": "cQC0Y2Dmhd",
+      "title": "What is the name of Character shown in below image?",
+      "quiz_image":"https://res.cloudinary.com/dakts9ect/image/upload/v1683839583/fcc-family-guys/meg/meg_tfdwiq.png",
+      "answers": [
+        "Carter Pewterschmidt",
+        "Lois griffin",
+        "meg griffin",
+        "Stewie griffin"
+      ],
+      "correct_answer": "meg griffin"
+    },
+    {
+      "id": "cQC0Y2Dmhe",
+      "title": "What is the name of Character shown in below image?",
+      "quiz_image":"https://res.cloudinary.com/dakts9ect/image/upload/v1683893909/fcc-family-guys/joe/joe_hpswnc.png",
+      "answers": [
+        "joe swanson",
+        "Lois griffin",
+        "meg griffin",
+        "Stewie griffin"
+      ],
+      "correct_answer": "joe swanson"
     }
   ]
 }
