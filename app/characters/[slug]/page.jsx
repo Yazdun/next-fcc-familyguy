@@ -82,7 +82,7 @@ export default async function Page({ params }) {
               return (
                 <li
                   className="p-2 italic text-gray-400 border-l-4 border-green-400 rounded-md"
-                  key={item.idx}
+                  key={idx}
                 >
                   {item.quote}
                 </li>
